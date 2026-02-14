@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { asset } from "@/lib/utils";
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -32,7 +33,7 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
 
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/aditi-valentine/image1.jpeg"
+        src={asset("/image1.jpeg")}
         alt="Us 💕"
         className="max-w-64 max-h-80 rounded-2xl border-2 border-primary/20 shadow-lg"
       />

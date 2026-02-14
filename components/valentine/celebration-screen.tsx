@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { fireValentineConfetti } from "@/lib/confetti";
+import { asset } from "@/lib/utils";
 
 export function CelebrationScreen() {
   useEffect(() => {
@@ -34,7 +35,7 @@ export function CelebrationScreen() {
       <div className="w-full max-w-lg space-y-4">
         {/* Hero video — front and center */}
         <video
-          src="/aditi-valentine/vid2.mp4"
+          src={asset("/vid2.mp4")}
           className="w-full rounded-2xl border-2 border-primary/30 shadow-xl mx-auto"
           autoPlay
           muted
@@ -46,12 +47,12 @@ export function CelebrationScreen() {
         {/* eslint-disable @next/next/no-img-element */}
         <div className="flex gap-3 justify-center">
           <img
-            src="/aditi-valentine/image4.jpeg"
+            src={asset("/image4.jpeg")}
             alt="Mountain top 💕"
             className="max-h-44 rounded-xl border-2 border-primary/20 shadow-md"
           />
           <img
-            src="/aditi-valentine/image5.jpeg"
+            src={asset("/image5.jpeg")}
             alt="Snow selfie 💕"
             className="max-h-44 rounded-xl border-2 border-primary/20 shadow-md"
           />
@@ -59,7 +60,7 @@ export function CelebrationScreen() {
 
         <div className="flex justify-center">
           <img
-            src="/aditi-valentine/image6.jpeg"
+            src={asset("/image6.jpeg")}
             alt="Hiking together 💕"
             className="max-h-44 rounded-xl border-2 border-primary/20 shadow-md"
           />

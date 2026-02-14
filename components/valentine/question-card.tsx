@@ -11,6 +11,7 @@ import { EscapeButton } from "./escape-button";
 import { SwapButtons } from "./swap-buttons";
 import { ProgressHearts } from "./progress-hearts";
 import type { Question } from "@/lib/questions";
+import { asset } from "@/lib/utils";
 
 interface QuestionCardProps {
   question: Question;
@@ -45,7 +46,7 @@ export function QuestionCard({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         {hasMedia && question.mediaType === "photo" && (
           <img
-            src={question.mediaSrc!}
+            src={asset(question.mediaSrc!)}
             alt="Us 💕"
             className="w-full max-h-64 object-contain bg-secondary/30"
           />
@@ -64,7 +65,7 @@ export function QuestionCard({
           {/* Centered video — preserves aspect ratio */}
           {hasMedia && question.mediaType === "video" && (
             <video
-              src={question.mediaSrc!}
+              src={asset(question.mediaSrc!)}
               className="w-full max-w-xs max-h-52 rounded-xl border-2 border-primary/20 shadow-md object-contain bg-secondary/30"
               autoPlay
               muted
