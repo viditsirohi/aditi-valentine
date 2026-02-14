@@ -3,9 +3,7 @@
 import {
   Card,
   CardContent,
-  CardHeader,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { EscapeButton } from "./escape-button";
 import { SwapButtons } from "./swap-buttons";
@@ -42,26 +40,17 @@ export function QuestionCard({
             : undefined
         }
       >
-        {/* Photo at top — preserves aspect ratio */}
+        {/* Photo at top — negative margin cancels card's top padding */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         {hasMedia && question.mediaType === "photo" && (
           <img
             src={asset(question.mediaSrc!)}
             alt="Us 💕"
-            className="w-full max-h-64 object-contain bg-secondary/30"
+            className="w-full max-h-64 object-contain bg-secondary/30 -mt-6 rounded-t-xl"
           />
         )}
 
-        <CardHeader className="text-center pb-2">
-          <Badge
-            variant="secondary"
-            className="w-fit mx-auto text-sm px-3 py-1"
-          >
-            Question {questionIndex + 1} of {totalQuestions}
-          </Badge>
-        </CardHeader>
-
-        <CardContent className="flex flex-col items-center gap-5 pt-2">
+        <CardContent className="flex flex-col items-center gap-5 pt-0">
           {/* Centered video — preserves aspect ratio */}
           {hasMedia && question.mediaType === "video" && (
             <video
@@ -73,11 +62,6 @@ export function QuestionCard({
               playsInline
             />
           )}
-
-          {/* Emoji */}
-          <div className={isValentine ? "text-7xl" : "text-6xl"}>
-            {question.emoji}
-          </div>
 
           {/* Question text */}
           <h2
