@@ -32,7 +32,7 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
 
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/image1.jpeg"
+        src="/aditi-valentine/image1.jpeg"
         alt="Us 💕"
         className="max-w-64 max-h-80 rounded-2xl border-2 border-primary/20 shadow-lg"
       />

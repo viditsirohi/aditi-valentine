@@ -15,7 +15,7 @@ export const questions: Question[] = [
     emoji: "🥺",
     yesResponse: "I knew you had great taste, Aditi! 😏",
     mechanic: "dodge",
-    mediaSrc: "/image5.jpeg",
+    mediaSrc: "/aditi-valentine/image5.jpeg",
     mediaType: "photo",
   },
   {
@@ -24,7 +24,7 @@ export const questions: Question[] = [
     emoji: "🥰",
     yesResponse: "Every second with you is my favorite! 💕",
     mechanic: "swap",
-    mediaSrc: "/image2.jpeg",
+    mediaSrc: "/aditi-valentine/image2.jpeg",
     mediaType: "photo",
   },
   {
@@ -33,7 +33,7 @@ export const questions: Question[] = [
     emoji: "😊",
     yesResponse: "You just smiled, didn't you, Aditi? 😄",
     mechanic: "dodge",
-    mediaSrc: "/vid1.mp4",
+    mediaSrc: "/aditi-valentine/vid1.mp4",
     mediaType: "video",
   },
   {
@@ -42,7 +42,7 @@ export const questions: Question[] = [
     emoji: "🍕",
     yesResponse: "Now THAT is true love! 🍕❤️",
     mechanic: "swap",
-    mediaSrc: "/image3.jpeg",
+    mediaSrc: "/aditi-valentine/image3.jpeg",
     mediaType: "photo",
   },
   {
@@ -51,7 +51,7 @@ export const questions: Question[] = [
     emoji: "💝",
     yesResponse: "",
     mechanic: "dodge",
-    mediaSrc: "/image4.jpeg",
+    mediaSrc: "/aditi-valentine/image4.jpeg",
     mediaType: "photo",
   },
 ];
